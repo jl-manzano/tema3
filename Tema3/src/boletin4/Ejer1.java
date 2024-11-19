@@ -8,11 +8,14 @@ public class Ejer1 {
 		// crear tabla 
 		int array[] = {1, 22, 24, 34, 17, 11, 7};
 		
+		// variable -> almacenar suma
+		int sumaEnteros = sumaValores(array);
+		
 		// mostrar contenido array
 		System.out.println(Arrays.toString(array) + "\n");
 		
 		// mostrar resultado suma valores tabla
-		System.out.println("La suma de los valores de la tabla es: " + sumaValores(array));
+		System.out.println("La suma de los valores de la tabla es: " + sumaEnteros);
 	}
 	
 	// crear función sumaValores
