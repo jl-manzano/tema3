@@ -38,6 +38,9 @@ public class Ejer5 {
 			System.out.println(Arrays.toString(tabla));
 		}
 		
+		// cerrar scanner
+		sc.close();
+		
 		
 	}
 	
