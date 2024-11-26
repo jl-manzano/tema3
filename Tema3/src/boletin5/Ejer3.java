@@ -4,14 +4,25 @@ public class Ejer3 {
 
 	public static void main(String[] args) {
 
-		// crear tabla
-		int tabla[][] = { { 1, 2, 3 }, { 2, 4, 5 }, { 3, 5, 6 } };
+		// crear tabla simetrica
+		int tabla1[][] = { { 1, 2, 3 }, { 2, 4, 5 }, { 3, 5, 6 } };
 
+		// crear tabla no simetrica
+		int tabla2[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+		
 		// mostrar resultado
-		if (esSimetrica(tabla)) {
-			System.out.println("La matriz es simétrica.");
+		if (esSimetrica(tabla1)) {
+			System.out.println("La matriz 1 es simétrica.");
 		} else {
-			System.out.println("La matriz no es simétrica");
+			System.out.println("La matriz 1 no es simétrica.");
+		}
+		
+		// mostrar resultado
+		if (esSimetrica(tabla2)) {
+			System.out.println("\nLa matriz 2 es simétrica.");
+		} else {
+			System.out.println("\nLa matriz 2 no es simétrica.");
 		}
 
 	}
@@ -21,6 +32,11 @@ public class Ejer3 {
 		// variable -> almacenar booleano
 		boolean simetrica = true;
 
+		// comprobar si la matriz no es cuadrada
+		if (t.length != t[0].length) {
+			simetrica = false;
+		}
+		
 		// bucle for -> recorrer columnas
 		for (int i = 0; i < t.length; i++) {
 
