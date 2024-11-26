@@ -5,18 +5,21 @@ public class Ejer3 {
 	public static void main(String[] args) {
 
 		// crear tabla
-		int tabla[][] = { { 1, 2, 3, 4 }, { 1, 2, 3, 4 }, { 1, 2, 3, 4 }, { 1, 2, 3, 4 } };
+		int tabla[][] = { { 1, 2, 3 }, { 2, 4, 5 }, { 3, 5, 6 } };
 
+		// mostrar resultado
+		if (esSimetrica(tabla)) {
+			System.out.println("La matriz es simétrica.");
+		} else {
+			System.out.println("La matriz no es simétrica");
+		}
 
 	}
 
-	static boolean tablaTransposicion(int t[][]) {
+	static boolean esSimetrica(int t[][]) {
 
-		// crear tabla
-		int tablaTransposicionada[][] = new int[t[0].length][t.length];
-
-		//
-		boolean simetrica = false;
+		// variable -> almacenar booleano
+		boolean simetrica = true;
 
 		// bucle for -> recorrer columnas
 		for (int i = 0; i < t.length; i++) {
@@ -24,13 +27,15 @@ public class Ejer3 {
 			// bucle for -> recorrer filas y almacenar valores transposicionados
 			for (int j = 0; j < t[i].length && simetrica; j++) {
 				if (t[i][j] != t[j][i]) {
-
-				} else {
 					simetrica = false;
 				}
 			}
 
 		}
+		
+		// devolver resultado
+		return simetrica;
+		
 	}
 
 }
