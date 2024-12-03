@@ -22,7 +22,7 @@ public class Ejer2 {
 
 			// mostrar tabla transposicionada de forma bonita
 			for (int j = 0; j < tabla[i].length; j++) {
-				System.out.print(tabla[j][i] + "\t");// tablaTransposicionada[j][i] = t[i][j];
+				System.out.print(tablaRes[i][j] + "\t");// tablaTransposicionada[j][i] = t[i][j];
 			}
 
 			// salto de línea
