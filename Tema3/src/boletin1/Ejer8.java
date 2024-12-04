@@ -1,6 +1,5 @@
 package boletin1;
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
@@ -11,9 +10,6 @@ public class Ejer8 {
 		// crear tabla
 		int tabla[] = new int[100];
 
-		// variable para almacenar un num pedido a usuario
-		int num;
-
 		// variable para almacenar num aleatorio generado entre 1 y 10
 		int aleat;
 
@@ -22,7 +18,6 @@ public class Ejer8 {
 		
 		// variable para almacenar booleano
 		boolean enc = false;
-		
 
 		// crear clase random
 		Random rand = new Random();
@@ -45,13 +40,13 @@ public class Ejer8 {
 			try {
 
 				// pedir num a usuario
-				System.out.println("\nIntroduzca un número del 0 al 99 incluidos: ");
+				System.out.println("\nIntroduzca un número del 1 al 10 incluidos: ");
 
 				// leer num introducido por usuario
 				resp = sc.nextInt();
 
 				// comprobar que introduce num >= 0 y <= 99
-				assert resp >= 0 && resp <= 99 : "\nDebe introducir un núm dentro del rango.";
+				assert resp >= 1 && resp <= 10 : "\nDebe introducir un núm dentro del rango.";
 
 			} catch (AssertionError e) {
 				System.out.println(e.getMessage());
@@ -61,7 +56,7 @@ public class Ejer8 {
 				sc.nextLine();
 			}
 
-		} while (resp < 0 || resp > 99);
+		} while (resp < 1 || resp > 10);
 			
 		// crear bucle for -> verificar numero a numero de la tabla si coincide con el num introducido por el usuario
 		for (int i = 0; i < tabla.length; i++) {

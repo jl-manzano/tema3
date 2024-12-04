@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Ejer4 {
 	public static void main(String[] args) {
 
-		// variable para almacenar tª media / mes
+		// variable para almacenar puntuacion
 		int puntuaciones[] = new int[8];
 
 		// variable para almacenar num

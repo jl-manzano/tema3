@@ -24,7 +24,7 @@ public class Ejer6 {
 		// variable -> buscar en la tabla si existe ya un num
 		int busqueda;
 		
-		// variable -> almacenar valor aleatorio generado
+		// variable -> almacenar numAciertos
 		int numAciertos = 0;
 		
 		// crear bucle for -> asignar valor aleatorio entre 0 y 99
