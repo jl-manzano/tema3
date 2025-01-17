@@ -4,7 +4,10 @@ public class Ejer2 {
 	public static void main(String[] args) {
 
 		// crear tabla
-		int tabla[][] = { { 1, 2, 3, 4 }, { 1, 2, 3, 4 }, { 1, 2, 3, 4 }, { 1, 2, 3, 4 } };
+		int tabla[][] = { { 1, 2, 3, 4 }, 
+						  { 1, 2, 3, 4 }, 
+						  { 1, 2, 3, 4 }, 
+						  { 1, 2, 3, 4 } };
 
 		// tabla para almacenar resultado
 		int tablaRes[][];

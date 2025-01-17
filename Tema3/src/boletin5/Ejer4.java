@@ -3,7 +3,9 @@ package boletin5;
 public class Ejer4 {
 	public static void main(String[] args) {
 		// crear tabla
-		int tabla1[][] = { { 8, 1, 6 }, { 3, 5, 7 }, { 4, 9, 2 } };
+		int tabla1[][] = { { 8, 1, 6 }, 
+				           { 3, 5, 7 }, 
+				           { 4, 9, 2 } };
 
 		// mostrar tabla de forma bonita
 		for (int i = 0; i < tabla1.length; i++) {

@@ -27,31 +27,14 @@ public class Ejer3 {
 				System.out.print("Introduce el número de filas: ");
 				filas = sc.nextInt();
 				System.out.println();
-
-				// definir assert -> comprobar que nº filas introducido es > 0
-				assert filas > 0 : "Introduzca un número de filas correcto";
-			} catch (AssertionError e) {
-				System.out.println(e.getMessage());
-			} catch (InputMismatchException e) {
-				System.out.println("Debe introducir un número entero.");
-			} finally {
-				sc.nextLine();
-			}
-
-		} while (filas <= 0);
-
-		// crear bucle do-while -> asegurar que usuario introduzca nº columnas > 0
-		do {
-
-			try {
-
+				
 				// pedir columnas a usuario
 				System.out.print("Introduce el número de columnas: ");
 				columnas = sc.nextInt();
 				System.out.println();
 
-				// definir assert -> comprobar que nº columnas introducido es > 0
-				assert columnas > 0 : "Introduzca un número de columnas correcto";
+				// definir assert -> comprobar que nº filas y columnas introducido es > 0
+				assert filas > 0 && columnas > 0 : (filas<0) ? "Introduzca un número de filas correcto" : "Introduzca un número de columnas correcto" ;
 			} catch (AssertionError e) {
 				System.out.println(e.getMessage());
 			} catch (InputMismatchException e) {
@@ -60,7 +43,7 @@ public class Ejer3 {
 				sc.nextLine();
 			}
 
-		} while (columnas <= 0);
+		} while (filas <= 0 && columnas <= 0);
 
 		// asignar nº filas y nº columnas a tabla creada
 		tabla = new double[filas][columnas];

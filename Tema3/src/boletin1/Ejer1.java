@@ -19,7 +19,7 @@ public class Ejer1 {
 		for (int i = 0; i < tabla.length; i++) {
 			
 			// generar número aleatorio entre 1 y 100
-			aleat = rand.nextInt(0, 101);
+			aleat = rand.nextInt(1, 101);
 			
 			// almacenar número aleatorio en posición de tabla
 			tabla[i] = aleat;

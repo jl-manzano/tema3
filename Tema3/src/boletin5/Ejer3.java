@@ -5,10 +5,14 @@ public class Ejer3 {
 	public static void main(String[] args) {
 
 		// crear tabla simetrica
-		int tabla1[][] = { { 1, 2, 3 }, { 2, 4, 5 }, { 3, 5, 6 } };
+		int tabla1[][] = { { 1, 2, 3 }, 
+						   { 2, 4, 5 }, 
+						   { 3, 5, 6 } };
 
 		// crear tabla no simetrica
-		int tabla2[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int tabla2[][] = { { 1, 2, 3 }, 
+				           { 4, 5, 6 }, 
+				           { 7, 8, 9 } };
 
 		
 		// mostrar resultado
